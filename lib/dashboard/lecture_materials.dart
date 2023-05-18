@@ -50,7 +50,7 @@ class LectureMaterialsScreen extends StatelessWidget {
                   Navigator.push(
                     context,
                     MaterialPageRoute(
-                      builder: (context) => const TimetablesScreen(),
+                      builder: (context) => LectureMaterialsScreen(),
                     ),
                   );
                 },
@@ -121,7 +121,7 @@ class LectureMaterialsScreen extends StatelessWidget {
                   Navigator.push(
                     context,
                     MaterialPageRoute(
-                      builder: (context) => const ExamResults(),
+                      builder: (context) => const LectureMaterialsScreen(),
                     ),
                   );
                 },
@@ -161,7 +161,7 @@ class LectureMaterialsScreen extends StatelessWidget {
                   Navigator.push(
                     context,
                     MaterialPageRoute(
-                      builder: (context) => const ExamResults(),
+                      builder: (context) => const LectureMaterialsScreen(),
                     ),
                   );
                 },
@@ -195,7 +195,7 @@ class LectureMaterialsScreen extends StatelessWidget {
                   Navigator.push(
                     context,
                     MaterialPageRoute(
-                      builder: (context) => const ExamResults(),
+                      builder: (context) => const LectureMaterialsScreen(),
                     ),
                   );
                 },

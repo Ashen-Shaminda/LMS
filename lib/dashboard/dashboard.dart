@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:lms/dashboard/exam_results.dart';
 import 'package:lms/dashboard/time_table.dart';
 
+import '../result.dart';
 import 'lecture_materials.dart';
 
 class DashboardScreen extends StatelessWidget {
@@ -9,6 +10,9 @@ class DashboardScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    var timeTable = TimeTable().testTimetable;
+    var results = ExamResults().testResults;
+
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.white,
@@ -50,7 +54,8 @@ class DashboardScreen extends StatelessWidget {
                   Navigator.push(
                     context,
                     MaterialPageRoute(
-                      builder: (context) => const TimetablesScreen(),
+                      builder: (context) =>
+                          TimetableScreen(timetable: timeTable),
                     ),
                   );
                 },
@@ -117,7 +122,8 @@ class DashboardScreen extends StatelessWidget {
                   Navigator.push(
                     context,
                     MaterialPageRoute(
-                      builder: (context) => const ExamResults(),
+                      builder: (context) =>
+                          ExamResultScreen(examResults: results),
                     ),
                   );
                 },
