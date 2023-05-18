@@ -2,7 +2,8 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:lms/drawer.dart';
-import 'package:lms/login/login_page.dart';
+import 'package:lms/home_page.dart';
+import 'package:lms/main_page.dart';
 import 'package:lms/navbar.dart';
 
 void main() async {
@@ -27,25 +28,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      theme: ThemeData(
-        primaryColor: Colors.white70,
-        primaryColorDark: Colors.white70,
-        fontFamily: 'DMSans',
-      ),
-      home: SafeArea(
-        top: false,
-        child: Scaffold(
-          appBar: AppBar(
-            backgroundColor: Colors.blue.shade900,
-            title: const Text(
-              "Learning Management System",
-              style: TextStyle(fontSize: 21),
-            ),
-          ),
-          endDrawer: const DrawerWidget(),
-          body:LoginPage(),
-        ),
-      ),
+      home: MainPage(),
     );
   }
 }
