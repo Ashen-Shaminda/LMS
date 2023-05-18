@@ -1,3 +1,4 @@
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:lms/dashboard/dashboard.dart';
 import 'package:lms/main.dart';
@@ -38,7 +39,6 @@ class _DrawerWidgetState extends State<DrawerWidget> {
               );
             },
           ),
-
           Container(
             margin: EdgeInsets.only(top: 300),
             child: Column(
@@ -50,7 +50,9 @@ class _DrawerWidgetState extends State<DrawerWidget> {
                   endIndent: 2,
                 ),
                 GestureDetector(
-                  onTap: (){},
+                  onTap: () {
+                    FirebaseAuth.instance.signOut();
+                  },
                   child: ListTile(
                     leading: Icon(Icons.login_outlined),
                     title: Text(
