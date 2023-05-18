@@ -1,8 +1,9 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+// ignore: depend_on_referenced_packages
 import 'package:flutter_clean_calendar/flutter_clean_calendar.dart';
 
 
+// ignore: use_key_in_widget_constructors
 class Calender extends StatefulWidget {
   @override
   _CalenderState createState() => _CalenderState();
@@ -47,7 +48,7 @@ class _CalenderState extends State<Calender> {
       selectedDay = date;
       selectedEvent = events[selectedDay] ?? [];
     });
-    print(selectedDay);
+    // print(selectedDay);
   }
   @override
   void initState() {

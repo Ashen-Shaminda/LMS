@@ -17,9 +17,10 @@ dependencies:
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.2
-  firebase_core: ^1.2.1
-  firebase_database: ^7.1.0
+  firebase_core: ^2.13.0
   persistent_bottom_nav_bar: ^5.0.2
+  firebase_auth: ^4.0.0
+  flutter_signin_button: ^2.0.0
 
 dev_dependencies:
   flutter_test:
@@ -34,7 +35,7 @@ flutter_native_splash:
   android: true
   ios: true
 
-  color: "#0e0c23"
+  color: "#FFFFFF"
   image: assets/playstore.png
 
   android_gravity: center

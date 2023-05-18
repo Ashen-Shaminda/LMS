@@ -48,18 +48,3 @@ class TimetableScreen extends StatelessWidget {
     );
   }
 }
-
-void main() {
-  List<TimetableEntry> testTimetable = [
-    TimetableEntry(course: 'Math', time: '10:00 AM - 11:30 AM', location: 'Room 101'),
-    TimetableEntry(course: 'Science', time: '1:30 PM - 3:00 PM', location: 'Room 205'),
-    TimetableEntry(course: 'History', time: '3:30 PM - 5:00 PM', location: 'Room 301'),
-  ];
-
-  runApp(MaterialApp(
-    home: TimetableScreen(timetable: testTimetable),
-    theme: ThemeData(
-      primaryColor: Colors.blue,
-    ),
-  ));
-}

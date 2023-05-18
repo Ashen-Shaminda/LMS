@@ -1,33 +1,33 @@
 {
   "project_info": {
-    "project_number": "106694852336",
-    "project_id": "lms-project-9e97d",
-    "storage_bucket": "lms-project-9e97d.appspot.com"
+    "project_number": "224124334619",
+    "project_id": "lms-app-5257f",
+    "storage_bucket": "lms-app-5257f.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:106694852336:android:d0a6098739b197c12e8c35",
+        "mobilesdk_app_id": "1:224124334619:android:6e6bc3e6ac59c5cac37ebe",
         "android_client_info": {
           "package_name": "com.example.lms"
         }
       },
       "oauth_client": [
         {
-          "client_id": "106694852336-fpcu1ogmq9m34pca9epb1q6cie416fdc.apps.googleusercontent.com",
+          "client_id": "224124334619-ks02k2pot0u3pdjdrd3q01bjuub6fv7q.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyCj9BEQ7Is1fpqJBulkLoZ4bZtBZ7PWY3w"
+          "current_key": "AIzaSyDuyLJUee9xnsfuaJmB6-AQ02_xZEzYbc0"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "106694852336-fpcu1ogmq9m34pca9epb1q6cie416fdc.apps.googleusercontent.com",
+              "client_id": "224124334619-ks02k2pot0u3pdjdrd3q01bjuub6fv7q.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

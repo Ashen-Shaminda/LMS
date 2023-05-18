@@ -2,9 +2,6 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:lms/dashboard/dashboard.dart';
 
-import 'exam_results.dart';
-import 'time_table.dart';
-
 class LectureMaterialsScreen extends StatelessWidget {
   const LectureMaterialsScreen({super.key});
 

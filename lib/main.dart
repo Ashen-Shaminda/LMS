@@ -1,12 +1,18 @@
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:lms/drawer.dart';
+import 'package:lms/login/login_page.dart';
 import 'package:lms/navbar.dart';
-import 'package:persistent_bottom_nav_bar/persistent_tab_view.dart';
 
-void main() => runApp(
-      const MyApp(),
-    );
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  Firebase.initializeApp();
+  await initialization(null);
+  runApp(
+    const MyApp(),
+  );
+}
 
 Future initialization(BuildContext? context) async {
   await Future.delayed(
@@ -37,7 +43,7 @@ class MyApp extends StatelessWidget {
             ),
           ),
           endDrawer: const DrawerWidget(),
-          body: BottomNavbar(),
+          body:LoginPage(),
         ),
       ),
     );

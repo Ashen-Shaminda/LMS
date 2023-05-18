@@ -22,8 +22,8 @@ class ExamResults {
 
 class TimeTable{
   List<TimetableEntry> testTimetable = [
-    TimetableEntry(course: 'Math', time: '10:00 AM - 11:30 AM', location: 'Room 101'),
-    TimetableEntry(course: 'Science', time: '1:30 PM - 3:00 PM', location: 'Room 205'),
-    TimetableEntry(course: 'History', time: '3:30 PM - 5:00 PM', location: 'Room 301'),
+    TimetableEntry(course: 'Software Engineering 2', time: '10:00 AM - 11:30 AM', location: 'FOC 101'),
+    TimetableEntry(course: 'Mobile Development', time: '1:30 PM - 3:00 PM', location: 'FOC L1'),
+    TimetableEntry(course: 'Computing Group Project', time: '3:30 PM - 5:00 PM', location: 'FOC 301'),
   ];
 }
