@@ -11,16 +11,16 @@ class TimetableEntry {
 class TimetableScreen extends StatelessWidget {
   final List<TimetableEntry> timetable;
 
-  TimetableScreen({required this.timetable});
+  const TimetableScreen({super.key, required this.timetable});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Timetable'),
+        title: const Text('Timetable'),
       ),
       body: Container(
-        padding: EdgeInsets.all(16.0),
+        padding: const EdgeInsets.all(16.0),
         child: ListView.builder(
           itemCount: timetable.length,
           itemBuilder: (context, index) {
@@ -31,13 +31,13 @@ class TimetableScreen extends StatelessWidget {
                 borderRadius: BorderRadius.circular(8.0),
               ),
               child: ListTile(
-                leading: Icon(
+                leading: const Icon(
                   Icons.calendar_today,
                   color: Colors.blue,
                 ),
                 title: Text(
                   entry.course,
-                  style: TextStyle(fontWeight: FontWeight.bold),
+                  style: const TextStyle(fontWeight: FontWeight.bold),
                 ),
                 subtitle: Text('Time: ${entry.time}\nLocation: ${entry.location}'),
               ),

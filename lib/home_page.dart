@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'drawer.dart';
-import 'navbar.dart';
+import 'navbar/navbar.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);

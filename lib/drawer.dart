@@ -11,6 +11,8 @@ class DrawerWidget extends StatefulWidget {
 }
 
 class _DrawerWidgetState extends State<DrawerWidget> {
+  final user = FirebaseAuth.instance.currentUser!;
+
   @override
   Widget build(BuildContext context) {
     return Drawer(
@@ -19,17 +21,37 @@ class _DrawerWidgetState extends State<DrawerWidget> {
       elevation: 20.0,
       child: ListView(
         children: [
-          const DrawerHeader(
-            child: Icon(
-              Icons.supervised_user_circle,
-              size: 100,
+          DrawerHeader(
+            padding: const EdgeInsets.only(left: 20),
+            child: Column(
+              children: [
+                const Icon(
+                  Icons.supervised_user_circle,
+                  size: 100,
+                ),
+                Text(
+                  'Logged in as ${user.email!}',
+                  style: const TextStyle(
+                    fontSize: 20,
+                    color: Colors.white,
+                  ),
+                  textAlign: TextAlign.center,
+                ),
+              ]
             ),
           ),
           ListTile(
-            leading: Icon(Icons.home_outlined),
+            leading: const Icon(
+              Icons.home_outlined,
+              size: 35,
+              color: Colors.white,
+            ),
             title: const Text(
               'HOME',
-              style: TextStyle(fontSize: 20),
+              style: TextStyle(
+                fontSize: 20,
+                color: Colors.white,
+              ),
             ),
             onTap: () {
               Navigator.of(context).push(
@@ -40,38 +62,54 @@ class _DrawerWidgetState extends State<DrawerWidget> {
             },
           ),
           Container(
-            margin: EdgeInsets.only(top: 300),
+            margin: const EdgeInsets.only(top: 300),
             child: Column(
               mainAxisAlignment: MainAxisAlignment.end,
               children: [
-                Divider(
+                const Divider(
                   thickness: 1,
                   color: Colors.black54,
                   endIndent: 2,
+                  height: 80,
+                ),
+                const SizedBox(
+                  height: 40,
                 ),
                 GestureDetector(
                   onTap: () {
                     FirebaseAuth.instance.signOut();
                   },
-                  child: ListTile(
-                    leading: Icon(Icons.login_outlined),
+                  child: const ListTile(
+                    leading: Icon(
+                      Icons.login_outlined,
+                      size: 30,
+                      color: Colors.white,
+                    ),
                     title: Text(
                       'Logout',
-                      style: TextStyle(fontSize: 20),
+                      style: TextStyle(
+                        fontSize: 20,
+                        color: Colors.white,
+                      ),
                     ),
                   ),
                 ),
-                Divider(),
+                const Divider(
+                  height: 10,
+                ),
                 Container(
-                  margin: EdgeInsets.only(top: 10),
-                  child: ListTile(
-                    leading: Icon(
-                      Icons.abc_outlined,
-                      size: 50,
+                  margin: const EdgeInsets.only(top: 10),
+                  child: const ListTile(
+                    leading: Image(
+                      image: AssetImage('assets/playstore.png'),
+                      width: 40,
                     ),
                     title: Text(
-                      "Logo",
-                      style: TextStyle(fontSize: 20),
+                      "LMS",
+                      style: TextStyle(
+                        fontSize: 20,
+                        color: Colors.white,
+                      ),
                     ),
                   ),
                 ),
@@ -81,6 +119,5 @@ class _DrawerWidgetState extends State<DrawerWidget> {
         ],
       ),
     );
-    ;
   }
 }

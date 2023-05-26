@@ -61,12 +61,12 @@ class _CalenderState extends State<Calender> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Calender'),
+        title: const Text('Calender'),
         centerTitle: true,
       ),
       body:  SafeArea(
         child: Container(
-          margin: EdgeInsets.only(top: 40),
+          margin: const EdgeInsets.only(top: 40),
           child: Calendar(
             startOnMonday: true,
             selectedColor: Colors.blue,

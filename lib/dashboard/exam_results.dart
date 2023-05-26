@@ -19,10 +19,10 @@ class ExamResultScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Exam Results'),
+        title: const Text('Exam Results'),
       ),
       body: Container(
-        padding: EdgeInsets.all(16.0),
+        padding: const EdgeInsets.all(16.0),
         child: ListView.builder(
           itemCount: examResults.length,
           itemBuilder: (context, index) {
@@ -42,7 +42,7 @@ class ExamResultScreen extends StatelessWidget {
                 ),
                 title: Text(
                   'Module: ${examResult.subject}',
-                  style: TextStyle(fontWeight: FontWeight.bold),
+                  style: const TextStyle(fontWeight: FontWeight.bold),
                 ),
                 subtitle: Text('Subject ID: ${examResult.subjectId}'),
                 trailing: Container(
@@ -50,10 +50,10 @@ class ExamResultScreen extends StatelessWidget {
                     color: Colors.green,
                     borderRadius: BorderRadius.circular(4.0),
                   ),
-                  padding: EdgeInsets.all(8.0),
+                  padding: const EdgeInsets.all(8.0),
                   child: Text(
                     'Score: ${examResult.score.toStringAsFixed(2)}',
-                    style: TextStyle(color: Colors.white),
+                    style: const TextStyle(color: Colors.white),
                   ),
                 ),
               ),

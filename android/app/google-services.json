@@ -29,6 +29,49 @@
             {
               "client_id": "224124334619-ks02k2pot0u3pdjdrd3q01bjuub6fv7q.apps.googleusercontent.com",
               "client_type": 3
+            },
+            {
+              "client_id": "224124334619-s73jjig7hh3hjsg5dveq58nvfcarg41p.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.lms"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:224124334619:android:f5f83644cf045ac8c37ebe",
+        "android_client_info": {
+          "package_name": "com.example.soil_test"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "224124334619-ks02k2pot0u3pdjdrd3q01bjuub6fv7q.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDuyLJUee9xnsfuaJmB6-AQ02_xZEzYbc0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "224124334619-ks02k2pot0u3pdjdrd3q01bjuub6fv7q.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "224124334619-s73jjig7hh3hjsg5dveq58nvfcarg41p.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.lms"
+              }
             }
           ]
         }

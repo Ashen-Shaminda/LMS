@@ -1,7 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:lms/calender.dart';
+import 'package:lms/navbar/calender.dart';
 import 'package:lms/dashboard/dashboard.dart';
+
 // import 'package:lms/dashboard/lecture_materials.dart';
 // import 'package:lms/dashboard/time_table.dart';
 // import 'package:lms/main.dart';
@@ -9,7 +10,7 @@ import 'package:lms/settings/settings.dart';
 import 'package:persistent_bottom_nav_bar/persistent_tab_view.dart';
 
 class BottomNavbar extends StatelessWidget {
-  BottomNavbar({Key? key}) : super(key: key);
+  const BottomNavbar({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -56,7 +57,11 @@ class BottomNavbar extends StatelessWidget {
 }
 
 List<Widget> _buildScreens() {
-  return [DashboardScreen(),Calender(),Settings()];
+  return [
+    const DashboardScreen(),
+    Calender(),
+    const Settings(),
+  ];
 }
 
 List<PersistentBottomNavBarItem> _navBarsItems() {

@@ -20,7 +20,9 @@ class DashboardScreen extends StatelessWidget {
           'Dashboard',
           style: TextStyle(
             color: Colors.black,
+            fontSize: 25
           ),
+          textAlign: TextAlign.center,
         ),
       ),
       body: ListView(

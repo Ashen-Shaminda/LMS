@@ -3,8 +3,8 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:lms/drawer.dart';
 import 'package:lms/home_page.dart';
-import 'package:lms/main_page.dart';
-import 'package:lms/navbar.dart';
+import 'package:lms/auth/main_page.dart';
+import 'package:lms/navbar/navbar.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
