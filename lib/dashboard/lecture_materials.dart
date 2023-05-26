@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:lms/dashboard/dashboard.dart';
+import 'package:lms/upload_materials/upload_materials.dart';
 
 class LectureMaterialsScreen extends StatelessWidget {
   const LectureMaterialsScreen({super.key});
@@ -47,7 +48,7 @@ class LectureMaterialsScreen extends StatelessWidget {
                   Navigator.push(
                     context,
                     MaterialPageRoute(
-                      builder: (context) => LectureMaterialsScreen(),
+                      builder: (context) => UploadFiles(),
                     ),
                   );
                 },
@@ -84,7 +85,7 @@ class LectureMaterialsScreen extends StatelessWidget {
                   Navigator.push(
                     context,
                     MaterialPageRoute(
-                      builder: (context) => const DashboardScreen(),
+                      builder: (context) => const UploadFiles(),
                     ),
                   );
                 },
@@ -118,7 +119,7 @@ class LectureMaterialsScreen extends StatelessWidget {
                   Navigator.push(
                     context,
                     MaterialPageRoute(
-                      builder: (context) => const LectureMaterialsScreen(),
+                      builder: (context) => const UploadFiles(),
                     ),
                   );
                 },
@@ -158,7 +159,7 @@ class LectureMaterialsScreen extends StatelessWidget {
                   Navigator.push(
                     context,
                     MaterialPageRoute(
-                      builder: (context) => const LectureMaterialsScreen(),
+                      builder: (context) => const UploadFiles(),
                     ),
                   );
                 },
@@ -192,7 +193,7 @@ class LectureMaterialsScreen extends StatelessWidget {
                   Navigator.push(
                     context,
                     MaterialPageRoute(
-                      builder: (context) => const LectureMaterialsScreen(),
+                      builder: (context) => const UploadFiles(),
                     ),
                   );
                 },
